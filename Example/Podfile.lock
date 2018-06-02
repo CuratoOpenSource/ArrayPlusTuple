@@ -1,27 +1,36 @@
 PODS:
-  - ArrayPlusTuple (0.1.0)
+  - ArrayPlusTuple (0.1.0):
+    - InjectableLoggers (~> 1.2)
+  - InjectableLoggers (1.2.0)
   - Nimble (7.0.3)
-  - Quick (1.2.0)
+  - Quick (1.3.0)
+  - QuickGWT (1.0.0):
+    - Quick (~> 1.3)
 
 DEPENDENCIES:
   - ArrayPlusTuple (from `../`)
   - Nimble (~> 7.0.2)
-  - Quick (~> 1.2.0)
+  - Quick (~> 1.3.0)
+  - QuickGWT (~> 1.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - InjectableLoggers
     - Nimble
     - Quick
+    - QuickGWT
 
 EXTERNAL SOURCES:
   ArrayPlusTuple:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ArrayPlusTuple: ac35d82e592a3231e1a07aa1a4243c297a066167
+  ArrayPlusTuple: ca3d692fb20e182c284f7653d0b5b50b18bc428d
+  InjectableLoggers: f63523bbb55c5b41ba7cb6a053f5de7aca20a009
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
-  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
+  QuickGWT: 1c95a0ec7bfb87f7afba8d6ad92af6c526402d6e
 
-PODFILE CHECKSUM: db7f2682321071ee7d01757668a3d96250d23872
+PODFILE CHECKSUM: dc94abf60016292c31798fc970bfd6c1796255e5
 
 COCOAPODS: 1.5.2
