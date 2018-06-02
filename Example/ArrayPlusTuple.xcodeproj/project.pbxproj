@@ -11,6 +11,7 @@
 		9F09BF670B63F875CC8BD83E /* Pods_ArrayPlusTuple_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A54C3369236B7635AE82E46 /* Pods_ArrayPlusTuple_Example.framework */; };
 		B6D177B52E8DC502F4D5C2E0 /* Pods_ArrayPlusTuple_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61FE2D279B7F41CA7A71318E /* Pods_ArrayPlusTuple_Tests.framework */; };
 		DE18FD3E20C2B78500E2CBA1 /* ArraySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18FD3D20C2B78500E2CBA1 /* ArraySpec.swift */; };
+		DEDE956720C2D74F00B342CB /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = DEDE956620C2D74F00B342CB /* Fastfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		A090D53607D80EC7099C1692 /* Pods-ArrayPlusTuple_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArrayPlusTuple_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArrayPlusTuple_Example/Pods-ArrayPlusTuple_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CC021792C9B872913E5BB2DF /* ArrayPlusTuple.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ArrayPlusTuple.podspec; path = ../ArrayPlusTuple.podspec; sourceTree = "<group>"; };
 		DE18FD3D20C2B78500E2CBA1 /* ArraySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArraySpec.swift; sourceTree = "<group>"; };
+		DEDE956620C2D74F00B342CB /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Fastfile; path = ../fastlane/Fastfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				DEDE956620C2D74F00B342CB /* Fastfile */,
 				CC021792C9B872913E5BB2DF /* ArrayPlusTuple.podspec */,
 				1B88FB3F4F718F6E72517914 /* README.md */,
 				05F4A75230C546E2F8F2BABB /* LICENSE */,
@@ -234,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEDE956720C2D74F00B342CB /* Fastfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
