@@ -44,6 +44,14 @@ Create a [feature request](https://github.com/mennolovink/ArrayPlusTuple/issues/
 
 Or [add it yourself](https://github.com/mennolovink/ArrayPlusTuple/blob/develop/ArrayPlusTuple/Classes/Array%2Btuple.swift) and create a pull request, if the [tests](http://htmlpreview.github.io/?https://github.com/mennolovink/ArrayPlusTuple/blob/develop/fastlane/test_output/report.html) pass i'll merge it.
 
+## Installation
+
+ArrayPlusTuple is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
+
+```ruby
+pod 'ArrayPlusTuple'
+```
+
 ## Author
 
 mennolovink, mclovink@me.com
