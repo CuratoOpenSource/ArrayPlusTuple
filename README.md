@@ -21,13 +21,13 @@ to the files where you need tuples from arrays.
 Non optional Any:
 
 ```Swift
-let tuple = [1, 2, "tree"].tuple
+let tuple = [1, 2, "three"].tuple
 ```
 
 Typed optional:
 
 ```Swift
-let tuple = [1, 2, "tree"].tuple as? (Int, Int, String)
+let tuple = [1, 2, "three"].tuple as? (Int, Int, String)
 ```
 
 ## Larger arrays
@@ -42,7 +42,7 @@ When creating tuples from arrays with more than 24 elements, a warning will be l
 
 Create a [feature request](https://github.com/mennolovink/ArrayPlusTuple/issues/new) and it will likely be picked up.
 
-Or [add it yourself](https://github.com/mennolovink/ArrayPlusTuple/blob/develop/ArrayPlusTuple/Classes/Array%2Btuple.swift) and create a pull request, if the tests pass i'll merge it.
+Or [add it yourself](https://github.com/mennolovink/ArrayPlusTuple/blob/develop/ArrayPlusTuple/Classes/Array%2Btuple.swift) and create a pull request, if the [tests](http://htmlpreview.github.io/?https://github.com/mennolovink/ArrayPlusTuple/blob/develop/fastlane/test_output/report.html) pass i'll merge it.
 
 ## Author
 
