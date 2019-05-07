@@ -52,10 +52,6 @@ ArrayPlusTuple is available through [CocoaPods](https://cocoapods.org). To insta
 pod 'ArrayPlusTuple'
 ```
 
-## Author
-
-mennolovink, mclovink@me.com
-
 ## License
 
 ArrayPlusTuple is available under the MIT license. See the LICENSE file for more info.
