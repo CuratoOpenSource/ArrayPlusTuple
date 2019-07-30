@@ -19,7 +19,6 @@ platform :ios do
       version = releaseBranchName.partition('/').last
     
       version_bump_podspec(path: "ArrayPlusTuple.podspec", version_number: version)
-      cocoapods(clean: true, podfile: "Example/Podfile", repo_update: true)
 
   		scan()
   		pod_lib_lint
