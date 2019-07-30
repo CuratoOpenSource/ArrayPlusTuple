@@ -37,7 +37,7 @@ platform :ios do
 
   		pod_push
 
-      github_release = set_github_release(repository_name: "mennolovink/ArrayPlusTuple",
+      github_release = set_github_release(repository_name: "lvnkmn/ArrayPlusTuple",
                                           api_token: ENV["GITHUB_TOKEN"],
                                           name: version,
                                           tag_name: version,

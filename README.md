@@ -2,9 +2,9 @@
 
  [![Version](http://img.shields.io/cocoapods/v/ArrayPlusTuple.svg?style=flat)](http://cocoapods.org/pods/Zoomy) [![Platform](http://img.shields.io/cocoapods/p/ArrayPlusTuple.svg?style=flat)](http://cocoapods.org/pods/Zoomy) [![License](http://img.shields.io/cocoapods/l/ArrayPlusTuple.svg?style=flat)](LICENSE)
 
-Simple [extension](https://github.com/mennolovink/ArrayPlusTuple/blob/develop/ArrayPlusTuple/Classes/Array%2Btuple.swift) that makes creating tuples from arrays a breeze. 
+Simple [extension](https://github.com/lvnkmn/ArrayPlusTuple/blob/develop/ArrayPlusTuple/Classes/Array%2Btuple.swift) that makes creating tuples from arrays a breeze. 
 
-Originally created for [Mock 'N Stub](https://github.com/mennolovink/Mock-N-stub).
+Originally created for [Mock 'N Stub](https://github.com/lvnkmn/Mock-N-stub).
 
 ## Setup
 
@@ -40,9 +40,9 @@ When creating tuples from arrays with more than 24 elements, a warning will be l
 
 ### Need support for more elements?
 
-Create a [feature request](https://github.com/mennolovink/ArrayPlusTuple/issues/new) and it will likely be picked up.
+Create a [feature request](https://github.com/lvnkmn/ArrayPlusTuple/issues/new) and it will likely be picked up.
 
-Or [add it yourself](https://github.com/mennolovink/ArrayPlusTuple/blob/develop/ArrayPlusTuple/Classes/Array%2Btuple.swift) and create a pull request, if the [tests](http://htmlpreview.github.io/?https://github.com/mennolovink/ArrayPlusTuple/blob/develop/fastlane/test_output/report.html) pass i'll merge it.
+Or [add it yourself](https://github.com/lvnkmn/ArrayPlusTuple/blob/develop/ArrayPlusTuple/Classes/Array%2Btuple.swift) and create a pull request, if the [tests](http://htmlpreview.github.io/?https://github.com/lvnkmn/ArrayPlusTuple/blob/develop/fastlane/test_output/report.html) pass i'll merge it.
 
 ## Installation
 
