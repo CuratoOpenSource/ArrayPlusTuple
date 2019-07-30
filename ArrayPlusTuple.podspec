@@ -1,6 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ArrayPlusTuple'
   s.version          = '1.0.0'
+  s.swift_version    = '5.0'
   s.summary          = 'Simple extension that makes creating tuples from arrays a breeze.'
 
   s.description      = <<-DESC
@@ -15,5 +16,5 @@ Originally created for MockNStub.
 
   s.ios.deployment_target = '8.0'
   s.source_files = 'ArrayPlusTuple/Classes/**/*'
-  s.dependency 'InjectableLoggers', '~> 1.2'
+  s.dependency 'InjectableLoggers', '~> 2'
 end

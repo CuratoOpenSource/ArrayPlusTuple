@@ -1,6 +1,5 @@
 import XCTest
 import Quick
-import QuickGWT
 import Nimble
 import InjectableLoggers
 @testable import ArrayPlusTuple
@@ -12,7 +11,7 @@ class ArraySpec: QuickSpec {
         let supportedElementsAmount = 24
         let unsupportedElementsAmount = supportedElementsAmount + 1
         
-        given("an array") {
+        describe("Given an array") {
             var sut: [Any]!
             
             context("with 0 elements", {
@@ -20,21 +19,21 @@ class ArraySpec: QuickSpec {
                     sut = []
                 }
                 
-                when("tuple is called", closure: {
+                context("When tuple is called", closure: {
                     var tuple: Any!
                     
                     beforeEach {
                         tuple = sut.tuple
                     }
                     
-                    then("provided tuple is empty tuple", closure: {
+                    it("Then provided tuple is empty tuple", closure: {
                         XCTAssertNotNil(tuple as? ())
                     })
                 })
             })
         }
         
-        given("a string array") {
+        describe("Given a string array") {
             
             var sut: [String]!
             var tuple: Any!
@@ -44,12 +43,12 @@ class ArraySpec: QuickSpec {
                     sut = self.stringArray(withSize: 1)
                 }
 
-                when("tuple is called", closure: {
+                context("When tuple is called", closure: {
                     beforeEach {
                         tuple = sut.tuple
                     }
 
-                    then("tuple contains correct elements", closure: {
+                    it("Then tuple contains correct elements", closure: {
                         XCTAssertEqual(tuple as! (String), (self.name(forIndex: 0)))
                     })
                 })
@@ -61,20 +60,21 @@ class ArraySpec: QuickSpec {
                         sut = self.stringArray(withSize: elementCount)
                     }
                     
-                    when("tuple is called", closure: {
+                    context("When tuple is called", closure: {
                         beforeEach {
                             tuple = sut.tuple
                         }
                         
-                        then("tuple contains correct elements", closure: {
-                            let tupleElements = Mirror(reflecting: tuple).children.map({ $0.value })
+                        it("Then tuple contains correct elements", closure: {
+                            let tupleElements = Mirror(reflecting: tuple!).children.map({ $0.value })
+                            
                             for (index, element) in tupleElements.enumerated() {
                                 XCTAssertEqual(element as! String, self.name(forIndex: index), "expected value \(element) at index \(index) in tuple with size \(elementCount)")
                             }
                         })
                         
-                        then("tuple has \(elementCount) elements", closure: {
-                            let tupleElements = Mirror(reflecting: tuple).children.map({ $0.value })
+                        it("Then tuple has \(elementCount) elements", closure: {
+                            let tupleElements = Mirror(reflecting: tuple!).children.map({ $0.value })
                             XCTAssertEqual(tupleElements.count, elementCount)
                         })
                     })
@@ -90,24 +90,24 @@ class ArraySpec: QuickSpec {
                     logger.relay = mockLogger
                 }
                 
-                when("tuple is called", closure: {
+                context("When tuple is called", closure: {
                     beforeEach {
                         tuple = sut.tuple
                     }
                     
-                    then("tuple contains correct elements", closure: {
-                        let tupleElements = Mirror(reflecting: tuple).children.map({ $0.value })
+                    it("Then tuple contains correct elements", closure: {
+                        let tupleElements = Mirror(reflecting: tuple!).children.map({ $0.value })
                         for (index, element) in tupleElements.enumerated() {
                             XCTAssertEqual(element as! String, self.name(forIndex: index))
                         }
                     })
                     
-                    then("tuple has \(supportedElementsAmount) elements", closure: {
-                        let tupleElements = Mirror(reflecting: tuple).children.map({ $0.value })
+                    it("Then tuple has \(supportedElementsAmount) elements", closure: {
+                        let tupleElements = Mirror(reflecting: tuple!).children.map({ $0.value })
                         XCTAssertEqual(tupleElements.count, supportedElementsAmount)
                     })
                     
-                    then("it logs warning to logger", closure: {
+                    it("Then it logs warning to logger", closure: {
                         XCTAssertEqual(mockLogger.loggedMessages(atLevel: .warning).last?.message as? String, """
                             Can currently only create tuples from arrays with up to \(supportedElementsAmount) elements. Elements at index \(unsupportedElementsAmount) and up will be lost
                             """)
@@ -116,7 +116,7 @@ class ArraySpec: QuickSpec {
             })
         }
         
-        given("an int array") {
+        describe("Given an int array") {
             
             var sut: [Int]!
             var tuple: Any!
@@ -126,12 +126,12 @@ class ArraySpec: QuickSpec {
                     sut = self.intArray(withSize: 1)
                 }
                 
-                when("tuple is called", closure: {
+                context("When tuple is called", closure: {
                     beforeEach {
                         tuple = sut.tuple
                     }
                     
-                    then("tuple contains correct elements", closure: {
+                    it("Then tuple contains correct elements", closure: {
                         XCTAssertEqual(tuple as! (Int), (0))
                     })
                 })
@@ -143,20 +143,20 @@ class ArraySpec: QuickSpec {
                         sut = self.intArray(withSize: elementCount)
                     }
                     
-                    when("tuple is called", closure: {
+                    context("When tuple is called", closure: {
                         beforeEach {
                             tuple = sut.tuple
                         }
                         
-                        then("tuple contains correct elements", closure: {
-                            let tupleElements = Mirror(reflecting: tuple).children.map({ $0.value })
+                        it("Then tuple contains correct elements", closure: {
+                            let tupleElements = Mirror(reflecting: tuple!).children.map({ $0.value })
                             for (index, element) in tupleElements.enumerated() {
                                 XCTAssertEqual(element as! Int, index, "expected value \(element) at index \(index) in tuple with size \(elementCount)")
                             }
                         })
                         
-                        then("tuple has \(elementCount) elements", closure: {
-                            let tupleElements = Mirror(reflecting: tuple).children.map({ $0.value })
+                        it("Then tuple has \(elementCount) elements", closure: {
+                            let tupleElements = Mirror(reflecting: tuple!).children.map({ $0.value })
                             XCTAssertEqual(tupleElements.count, elementCount)
                         })
                     })
@@ -172,24 +172,24 @@ class ArraySpec: QuickSpec {
                     logger.relay = mockLogger
                 }
                 
-                when("tuple is called", closure: {
+                context("When tuple is called", closure: {
                     beforeEach {
                         tuple = sut.tuple
                     }
                     
-                    then("tuple contains correct elements", closure: {
-                        let tupleElements = Mirror(reflecting: tuple).children.map({ $0.value })
+                    it("Then tuple contains correct elements", closure: {
+                        let tupleElements = Mirror(reflecting: tuple!).children.map({ $0.value })
                         for (index, element) in tupleElements.enumerated() {
                             XCTAssertEqual(element as! Int, index)
                         }
                     })
                     
-                    then("tuple has \(supportedElementsAmount) elements", closure: {
-                        let tupleElements = Mirror(reflecting: tuple).children.map({ $0.value })
+                    it("Then tuple has \(supportedElementsAmount) elements", closure: {
+                        let tupleElements = Mirror(reflecting: tuple!).children.map({ $0.value })
                         XCTAssertEqual(tupleElements.count, supportedElementsAmount)
                     })
                     
-                    then("it logs warning to logger", closure: {
+                    it("Then it logs warning to logger", closure: {
                         XCTAssertEqual(mockLogger.loggedMessages(atLevel: .warning).last?.message as? String, """
                             Can currently only create tuples from arrays with up to \(supportedElementsAmount) elements. Elements at index \(unsupportedElementsAmount) and up will be lost
                             """)
@@ -198,7 +198,7 @@ class ArraySpec: QuickSpec {
             })
         }
         
-        given("an array with ints and strings") {
+        describe("Given an array with ints and strings") {
             var sut: [Any]!
             var tuple: Any!
             
@@ -206,12 +206,12 @@ class ArraySpec: QuickSpec {
                 sut = [1, 2, "three", "four"]
             }
             
-            when("tuple is called", closure: {
+            context("When tuple is called", closure: {
                 beforeEach {
                     tuple = sut.tuple
                 }
                 
-                then("tuple contains correct elements", closure: {
+                it("Then tuple contains correct elements", closure: {
                     XCTAssert(tuple as! (Int, Int, String, String) == (1, 2, "three", "four"))
                 })
             })

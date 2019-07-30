@@ -12,13 +12,13 @@ import ArrayPlusTuple
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
+    internal func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         let tuple1 = [1, 2, "three"].tuple
+        print(tuple1)
         
         let tuple2 = [1, 2, "three"].tuple as? (Int, Int, String)
-        
+        print(tuple2)
         
         return true
     }

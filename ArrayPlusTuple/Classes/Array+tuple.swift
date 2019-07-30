@@ -1,6 +1,6 @@
 public extension Array {
     
-    public var tuple: Any {
+    var tuple: Any {
         switch count {
         case 0:
             return ()
