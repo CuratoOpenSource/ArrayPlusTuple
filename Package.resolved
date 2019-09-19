@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "InjectableLoggers",
+        "repositoryURL": "https://github.com/lvnkmn/InjectableLoggers",
+        "state": {
+          "branch": null,
+          "revision": "0092a51940b00bb09ffb0593e7ed53140b3b4806",
+          "version": "2.1.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
