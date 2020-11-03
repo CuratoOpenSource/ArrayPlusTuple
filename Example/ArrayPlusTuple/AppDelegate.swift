@@ -1,9 +1,5 @@
 //
-//  AppDelegate.swift
-//  ArrayPlusTuple
-//
-//  Created by mennolovink on 06/02/2018.
-//  Copyright (c) 2018 mennolovink. All rights reserved.
+//  Copyright © 2020 Curato Research BV. All rights reserved.
 //
 
 import UIKit

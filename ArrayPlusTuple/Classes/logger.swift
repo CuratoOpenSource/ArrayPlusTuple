@@ -1,3 +1,7 @@
+//
+//  Copyright © 2020 Curato Research BV. All rights reserved.
+//
+
 import InjectableLoggers
 
 /// Changes to these settings will have effect up until the point that the first loggings have been made
