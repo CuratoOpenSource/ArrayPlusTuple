@@ -46,11 +46,7 @@ Or [add it yourself](https://github.com/lvnkmn/ArrayPlusTuple/blob/develop/Array
 
 ## Installation
 
-ArrayPlusTuple is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
-
-```ruby
-pod 'ArrayPlusTuple'
-```
+ArrayPlusTuple is available through [Swift Package Manager](https://swift.org/package-manager/). To install it, simply add it to your project using this repository's URL as explained [here](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app).
 
 ## License
 
